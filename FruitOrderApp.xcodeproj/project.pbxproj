@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		3847836B2AFBED9C00D2C231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847836A2AFBED9C00D2C231 /* AppDelegate.swift */; };
-		3847836D2AFBED9C00D2C231 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847836C2AFBED9C00D2C231 /* SceneDelegate.swift */; };
-		3847836F2AFBED9C00D2C231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847836E2AFBED9C00D2C231 /* ViewController.swift */; };
-		384783722AFBED9C00D2C231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384783702AFBED9C00D2C231 /* Main.storyboard */; };
 		384783752AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 384783732AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld */; };
 		384783772AFBED9D00D2C231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384783762AFBED9D00D2C231 /* Assets.xcassets */; };
-		3847837A2AFBED9D00D2C231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384783782AFBED9D00D2C231 /* LaunchScreen.storyboard */; };
+		384783822AFBEE2100D2C231 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783812AFBEE2100D2C231 /* FirstViewController.swift */; };
+		384783842AFD7C0600D2C231 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783832AFD7C0600D2C231 /* DataModel.swift */; };
+		384783862AFD7FE500D2C231 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783852AFD7FE500D2C231 /* FirstView.swift */; };
+		384783882AFD9A1B00D2C231 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783872AFD9A1B00D2C231 /* LoginViewController.swift */; };
+		3847838A2AFD9A8200D2C231 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783892AFD9A8200D2C231 /* LoginView.swift */; };
+		3847838C2AFD9A9400D2C231 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847838B2AFD9A9400D2C231 /* RegisterViewController.swift */; };
+		3847838E2AFD9AB400D2C231 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847838D2AFD9AB400D2C231 /* RegisterView.swift */; };
+		384783942AFE7EFB00D2C231 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 384783932AFE7EFB00D2C231 /* SnapKit */; };
+		384783962AFE7EFB00D2C231 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 384783952AFE7EFB00D2C231 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		384783672AFBED9C00D2C231 /* FruitOrderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitOrderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3847836A2AFBED9C00D2C231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3847836C2AFBED9C00D2C231 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3847836E2AFBED9C00D2C231 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		384783712AFBED9C00D2C231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		384783742AFBED9C00D2C231 /* FruitOrderApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitOrderApp.xcdatamodel; sourceTree = "<group>"; };
 		384783762AFBED9D00D2C231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		384783792AFBED9D00D2C231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3847837B2AFBED9D00D2C231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384783812AFBEE2100D2C231 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		384783832AFD7C0600D2C231 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		384783852AFD7FE500D2C231 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		384783872AFD9A1B00D2C231 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		384783892AFD9A8200D2C231 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3847838B2AFD9A9400D2C231 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3847838D2AFD9AB400D2C231 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384783942AFE7EFB00D2C231 /* SnapKit in Frameworks */,
+				384783962AFE7EFB00D2C231 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,15 +69,42 @@
 			isa = PBXGroup;
 			children = (
 				3847836A2AFBED9C00D2C231 /* AppDelegate.swift */,
-				3847836C2AFBED9C00D2C231 /* SceneDelegate.swift */,
-				3847836E2AFBED9C00D2C231 /* ViewController.swift */,
-				384783702AFBED9C00D2C231 /* Main.storyboard */,
+				3847838F2AFD9B9700D2C231 /* Model */,
+				384783912AFD9CD700D2C231 /* View */,
+				384783902AFD9CC000D2C231 /* ViewModel */,
 				384783762AFBED9D00D2C231 /* Assets.xcassets */,
-				384783782AFBED9D00D2C231 /* LaunchScreen.storyboard */,
 				3847837B2AFBED9D00D2C231 /* Info.plist */,
 				384783732AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld */,
 			);
 			path = FruitOrderApp;
+			sourceTree = "<group>";
+		};
+		3847838F2AFD9B9700D2C231 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				384783832AFD7C0600D2C231 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		384783902AFD9CC000D2C231 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				384783852AFD7FE500D2C231 /* FirstView.swift */,
+				384783892AFD9A8200D2C231 /* LoginView.swift */,
+				3847838D2AFD9AB400D2C231 /* RegisterView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		384783912AFD9CD700D2C231 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				384783812AFBEE2100D2C231 /* FirstViewController.swift */,
+				384783872AFD9A1B00D2C231 /* LoginViewController.swift */,
+				3847838B2AFD9A9400D2C231 /* RegisterViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +123,10 @@
 			dependencies = (
 			);
 			name = FruitOrderApp;
+			packageProductDependencies = (
+				384783932AFE7EFB00D2C231 /* SnapKit */,
+				384783952AFE7EFB00D2C231 /* SnapKit-Dynamic */,
+			);
 			productName = FruitOrderApp;
 			productReference = 384783672AFBED9C00D2C231 /* FruitOrderApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +155,9 @@
 				Base,
 			);
 			mainGroup = 3847835E2AFBED9C00D2C231;
+			packageReferences = (
+				384783922AFE7EFB00D2C231 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 384783682AFBED9C00D2C231 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,9 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3847837A2AFBED9D00D2C231 /* LaunchScreen.storyboard in Resources */,
 				384783772AFBED9D00D2C231 /* Assets.xcassets in Resources */,
-				384783722AFBED9C00D2C231 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,33 +183,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3847836F2AFBED9C00D2C231 /* ViewController.swift in Sources */,
+				3847838E2AFD9AB400D2C231 /* RegisterView.swift in Sources */,
+				384783882AFD9A1B00D2C231 /* LoginViewController.swift in Sources */,
+				3847838A2AFD9A8200D2C231 /* LoginView.swift in Sources */,
+				384783822AFBEE2100D2C231 /* FirstViewController.swift in Sources */,
+				3847838C2AFD9A9400D2C231 /* RegisterViewController.swift in Sources */,
+				384783862AFD7FE500D2C231 /* FirstView.swift in Sources */,
+				384783842AFD7C0600D2C231 /* DataModel.swift in Sources */,
 				384783752AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld in Sources */,
 				3847836B2AFBED9C00D2C231 /* AppDelegate.swift in Sources */,
-				3847836D2AFBED9C00D2C231 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		384783702AFBED9C00D2C231 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				384783712AFBED9C00D2C231 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		384783782AFBED9D00D2C231 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				384783792AFBED9D00D2C231 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3847837C2AFBED9D00D2C231 /* Debug */ = {
@@ -222,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -279,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -300,7 +328,6 @@
 				INFOPLIST_FILE = FruitOrderApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -327,7 +354,6 @@
 				INFOPLIST_FILE = FruitOrderApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -365,6 +391,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		384783922AFE7EFB00D2C231 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		384783932AFE7EFB00D2C231 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 384783922AFE7EFB00D2C231 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		384783952AFE7EFB00D2C231 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 384783922AFE7EFB00D2C231 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		384783732AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld */ = {
