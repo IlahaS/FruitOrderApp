@@ -3,7 +3,14 @@
 import UIKit
 import SnapKit
 
+protocol FirstViewDelegate: AnyObject {
+    func loginButtonTapped()
+    func registerButtonTapped()
+}
+
 class FirstView: UIView {
+    
+    weak var delegate: FirstViewDelegate?
     
     let firstImage: UIImageView = {
         var image = UIImageView()
@@ -21,6 +28,7 @@ class FirstView: UIView {
         button.layer.cornerRadius = 8
         button.backgroundColor = .purpleColor
         button.clipsToBounds = true
+        button.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
         return button
       }()
     
@@ -32,6 +40,7 @@ class FirstView: UIView {
         button.layer.cornerRadius = 8
         button.backgroundColor = .grayColor
         button.clipsToBounds = true
+        button.addTarget(self, action: #selector(gotoRegister), for: .touchUpInside)
         return button
       }()
     
@@ -52,10 +61,28 @@ class FirstView: UIView {
         addSubview(loginButton)
         addSubview(registerButton)
         
-        loginButton.snp.makeConstraints {
-            $0.leading.trailing.equalToSuperview().inset(32)
-            $0.bottom.
+      
+        firstImage.snp.makeConstraints {
+            $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(56)
+            $0.leading.equalToSuperview()
+            $0.trailing.equalToSuperview()
+            $0.height.equalTo(250)
         }
+
+        loginButton.snp.makeConstraints {
+            $0.top.equalTo(firstImage.snp.bottom).offset(32)
+            $0.height.equalTo(50)
+            $0.leading.equalToSuperview().offset(32)
+            $0.trailing.equalToSuperview().offset(-32)
+        }
+
+        registerButton.snp.makeConstraints {
+            $0.top.equalTo(loginButton.snp.bottom).offset(16)
+            $0.height.equalTo(50)
+            $0.leading.equalToSuperview().offset(32)
+            $0.trailing.equalToSuperview().offset(-32)
+        }
+
         
 //        NSLayoutConstraint.activate([
 //        
@@ -75,6 +102,14 @@ class FirstView: UIView {
 //            registerButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32)
 //            
 //        ])
+    }
+    
+    @objc func goToLogin() {
+        delegate?.loginButtonTapped()
+    }
+    
+    @objc func gotoRegister() {
+        delegate?.registerButtonTapped()
     }
     
 }

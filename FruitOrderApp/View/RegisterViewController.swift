@@ -8,7 +8,9 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupView()
+        registerView.delegate = self
     }
     
     private func setupView(){
@@ -22,5 +24,12 @@ class RegisterViewController: UIViewController {
             registerView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
+}
 
+extension RegisterViewController: RegisterViewDelegate {
+    
+    func registerViewDismiss() {
+        
+        dismiss(animated: true)
+    }
 }

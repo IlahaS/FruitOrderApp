@@ -9,6 +9,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        firstView.delegate = self
         //firstView.delegate = self
         //view.backgroundColor = .red
     }
@@ -24,4 +25,19 @@ class FirstViewController: UIViewController {
             firstView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
+    
+}
+
+extension FirstViewController: FirstViewDelegate {
+    
+    func loginButtonTapped() {
+        let loginViewController = LoginViewController()
+        navigationController?.pushViewController(loginViewController, animated: true)
+    }
+    
+    func registerButtonTapped() {
+        let registerViewController = RegisterViewController()
+        navigationController?.pushViewController(registerViewController, animated: true)
+    }
+    
 }

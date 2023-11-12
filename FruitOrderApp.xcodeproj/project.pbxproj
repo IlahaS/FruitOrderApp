@@ -11,7 +11,7 @@
 		384783752AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 384783732AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld */; };
 		384783772AFBED9D00D2C231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384783762AFBED9D00D2C231 /* Assets.xcassets */; };
 		384783822AFBEE2100D2C231 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783812AFBEE2100D2C231 /* FirstViewController.swift */; };
-		384783842AFD7C0600D2C231 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783832AFD7C0600D2C231 /* DataModel.swift */; };
+		384783842AFD7C0600D2C231 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783832AFD7C0600D2C231 /* Extensions.swift */; };
 		384783862AFD7FE500D2C231 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783852AFD7FE500D2C231 /* FirstView.swift */; };
 		384783882AFD9A1B00D2C231 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783872AFD9A1B00D2C231 /* LoginViewController.swift */; };
 		3847838A2AFD9A8200D2C231 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783892AFD9A8200D2C231 /* LoginView.swift */; };
@@ -19,6 +19,7 @@
 		3847838E2AFD9AB400D2C231 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847838D2AFD9AB400D2C231 /* RegisterView.swift */; };
 		384783942AFE7EFB00D2C231 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 384783932AFE7EFB00D2C231 /* SnapKit */; };
 		384783962AFE7EFB00D2C231 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 384783952AFE7EFB00D2C231 /* SnapKit-Dynamic */; };
+		384783982B0026DE00D2C231 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783972B0026DE00D2C231 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +29,13 @@
 		384783762AFBED9D00D2C231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3847837B2AFBED9D00D2C231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384783812AFBEE2100D2C231 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		384783832AFD7C0600D2C231 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		384783832AFD7C0600D2C231 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		384783852AFD7FE500D2C231 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		384783872AFD9A1B00D2C231 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		384783892AFD9A8200D2C231 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3847838B2AFD9A9400D2C231 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3847838D2AFD9AB400D2C231 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		384783972B0026DE00D2C231 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,8 @@
 		3847838F2AFD9B9700D2C231 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				384783832AFD7C0600D2C231 /* DataModel.swift */,
+				384783832AFD7C0600D2C231 /* Extensions.swift */,
+				384783972B0026DE00D2C231 /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,8 +191,9 @@
 				3847838A2AFD9A8200D2C231 /* LoginView.swift in Sources */,
 				384783822AFBEE2100D2C231 /* FirstViewController.swift in Sources */,
 				3847838C2AFD9A9400D2C231 /* RegisterViewController.swift in Sources */,
+				384783982B0026DE00D2C231 /* DataManager.swift in Sources */,
 				384783862AFD7FE500D2C231 /* FirstView.swift in Sources */,
-				384783842AFD7C0600D2C231 /* DataModel.swift in Sources */,
+				384783842AFD7C0600D2C231 /* Extensions.swift in Sources */,
 				384783752AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld in Sources */,
 				3847836B2AFBED9C00D2C231 /* AppDelegate.swift in Sources */,
 			);

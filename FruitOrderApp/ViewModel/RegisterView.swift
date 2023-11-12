@@ -1,6 +1,7 @@
 
 
 import UIKit
+import SnapKit
 
 protocol RegisterViewDelegate: AnyObject{
     func registerViewDismiss()
@@ -103,6 +104,7 @@ class RegisterView: UIView {
         button.layer.cornerRadius = 8
         button.backgroundColor = .purpleColor
         button.clipsToBounds = true
+        button.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
         return button
       }()
     
@@ -124,15 +126,21 @@ class RegisterView: UIView {
         addSubview(textF4)
         addSubview(registerButton)
         
-        NSLayoutConstraint.activate([
-            welcome.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 24),
-            welcome.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
-            welcome.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
-            welcome.heightAnchor.constraint(equalToConstant: 100),
+        welcome.snp.makeConstraints {
+            $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            $0.leading.trailing.equalToSuperview().offset(32)
+            $0.height.equalTo(100)
+        }
+        
+        textF1.snp.makeConstraints {
+            $0.top.equalTo(welcome.snp.bottom).offset(32)
+            $0.leading.equalToSuperview().offset(32)
             
-            textF1.topAnchor.constraint(equalTo: welcome.bottomAnchor, constant: 32),
-            textF1.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32)
-
-        ])
+        }
+    }
+    
+    @objc
+    func goToLogin() {
+        
     }
 }
