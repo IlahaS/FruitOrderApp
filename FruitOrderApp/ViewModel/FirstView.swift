@@ -56,7 +56,7 @@ class FirstView: UIView {
     
     private func setupView(){
         
-        backgroundColor = .yellowColor
+        backgroundColor = .white
         addSubview(firstImage)
         addSubview(loginButton)
         addSubview(registerButton)

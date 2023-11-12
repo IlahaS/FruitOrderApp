@@ -18,11 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = FirstViewController()
-        let navVC = UINavigationController(rootViewController: vc)
-        window?.rootViewController = navVC
         window?.makeKeyAndVisible()
-        
+        //let loggedIn = UserDefaults.standard.bool(forKey: "loggedIn")
+
+//                if loggedIn {
+//                    let homeController = HomeViewController()
+//                    let navigationController = UINavigationController(rootViewController: homeController)
+//                    window?.rootViewController = navigationController
+                //} else {
+                    let firstController = FirstViewController()
+                    let navigationController = UINavigationController(rootViewController: firstController)
+                    window?.rootViewController = navigationController
+                //}
         
         return true
     }

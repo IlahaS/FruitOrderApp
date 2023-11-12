@@ -3,32 +3,36 @@
 import UIKit
 import SnapKit
 
-protocol RegisterViewDelegate: AnyObject{
-    func registerViewDismiss()
+
+protocol RegisterViewDelegate: AnyObject {
+    func registerButtonTapped()
 }
 
 class RegisterView: UIView {
     
     weak var delegate: RegisterViewDelegate?
     
+    var onUserRegistered: ((User) -> Void)?
+    //var onLogin: ((String?, String?) -> Void)?
+    var users = [User]()
+    let helper = FileManagerHelper()
+    
     lazy var welcome: UILabel! = {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 70))
-            label.center = CGPoint(x: 160, y: 285)
         label.textAlignment = .left
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.lineBreakMode = NSLineBreakMode.byWordWrapping
-        label.numberOfLines = 1
-        label.font = UIFont(name: label.font.fontName, size: 50)
-        label.font = UIFont(name:"HelveticaNeue-Bold", size: 28)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 3
-            label.text = "Get started with fresh goodness! Sign up to explore a world of delicious fruits."
-
+        label.font = UIFont(name:"Roboto", size: 28)
+        label.lineBreakMode = .byWordWrapping
+        label.text = "Get started with fresh goodness! Sign up to explore!"
+        label.font = UIFont.boldSystemFont(ofSize: 28)
+        label.textColor = .grayColor
         return label
     }()
     
-    lazy var textF1: UITextField! = {
+    lazy var fullNameTextField: UITextField! = {
         let text1 = UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
         text1.placeholder = "Enter your fullName"
         text1.textColor = .white
@@ -45,7 +49,7 @@ class RegisterView: UIView {
         return text1
     }()
     
-    lazy var textF2: UITextField! = {
+    lazy var gmailTextField: UITextField! = {
         let text1 = UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
         text1.placeholder = "Enter your gmail"
         text1.textColor = .white
@@ -62,7 +66,7 @@ class RegisterView: UIView {
         return text1
     }()
     
-    lazy var textF3: UITextField! = {
+    lazy var phoneTextField: UITextField! = {
         let text1 = UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
         text1.placeholder = "Enter your phone"
         text1.textColor = .white
@@ -79,7 +83,7 @@ class RegisterView: UIView {
         return text1
     }()
     
-    lazy var textF4: UITextField! = {
+    lazy var passwordTextField: UITextField! = {
         let text1 = UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
         text1.placeholder = "Enter your password"
         text1.textColor = .white
@@ -110,7 +114,11 @@ class RegisterView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         setupView()
+        helper.readData { users in
+            self.users = users
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -119,28 +127,54 @@ class RegisterView: UIView {
     }
     
     func setupView(){
+        
+        backgroundColor = .white
         addSubview(welcome)
-        addSubview(textF1)
-        addSubview(textF2)
-        addSubview(textF3)
-        addSubview(textF4)
+        addSubview(fullNameTextField)
+        addSubview(gmailTextField)
+        addSubview(phoneTextField)
+        addSubview(passwordTextField)
         addSubview(registerButton)
         
         welcome.snp.makeConstraints {
             $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
-            $0.leading.trailing.equalToSuperview().offset(32)
-            $0.height.equalTo(100)
+            $0.leading.trailing.equalToSuperview().inset(32)
+            $0.height.equalTo(130)
         }
         
-        textF1.snp.makeConstraints {
+        fullNameTextField.snp.makeConstraints {
             $0.top.equalTo(welcome.snp.bottom).offset(32)
-            $0.leading.equalToSuperview().offset(32)
-            
+            $0.leading.trailing.equalToSuperview().inset(32)
+            $0.height.equalTo(50)
+        }
+        
+        gmailTextField.snp.makeConstraints {
+            $0.top.equalTo(fullNameTextField.snp.bottom).offset(32)
+            $0.leading.trailing.equalToSuperview().inset(32)
+            $0.height.equalTo(50)
+        }
+        
+        phoneTextField.snp.makeConstraints {
+            $0.top.equalTo(gmailTextField.snp.bottom).offset(32)
+            $0.leading.trailing.equalToSuperview().inset(32)
+            $0.height.equalTo(50)
+        }
+        
+        passwordTextField.snp.makeConstraints {
+            $0.top.equalTo(phoneTextField.snp.bottom).offset(32)
+            $0.leading.trailing.equalToSuperview().inset(32)
+            $0.height.equalTo(50)
+        }
+        
+        registerButton.snp.makeConstraints {
+            $0.top.equalTo(passwordTextField.snp.bottom).offset(52)
+            $0.leading.trailing.equalToSuperview().inset(56)
+            $0.height.equalTo(50)
         }
     }
     
-    @objc
-    func goToLogin() {
-        
+    
+    @objc func goToLogin() {
+        delegate?.registerButtonTapped()
     }
 }

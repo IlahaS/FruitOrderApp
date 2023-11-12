@@ -10,7 +10,6 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         firstView.delegate = self
-        //firstView.delegate = self
         //view.backgroundColor = .red
     }
     
@@ -24,6 +23,14 @@ class FirstViewController: UIViewController {
             firstView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             firstView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let viewControllers = navigationController?.viewControllers, viewControllers.contains(self) {
+            navigationController?.popToViewController(self, animated: false)
+        }
     }
     
 }

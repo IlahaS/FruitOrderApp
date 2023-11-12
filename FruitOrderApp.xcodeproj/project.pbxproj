@@ -20,6 +20,8 @@
 		384783942AFE7EFB00D2C231 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 384783932AFE7EFB00D2C231 /* SnapKit */; };
 		384783962AFE7EFB00D2C231 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 384783952AFE7EFB00D2C231 /* SnapKit-Dynamic */; };
 		384783982B0026DE00D2C231 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783972B0026DE00D2C231 /* DataManager.swift */; };
+		3847839A2B01067D00D2C231 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783992B01067D00D2C231 /* FileManagerHelper.swift */; };
+		3847839C2B0109A500D2C231 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847839B2B0109A500D2C231 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		3847838B2AFD9A9400D2C231 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3847838D2AFD9AB400D2C231 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		384783972B0026DE00D2C231 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		384783992B01067D00D2C231 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
+		3847839B2B0109A500D2C231 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			children = (
 				384783832AFD7C0600D2C231 /* Extensions.swift */,
 				384783972B0026DE00D2C231 /* DataManager.swift */,
+				384783992B01067D00D2C231 /* FileManagerHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 				384783812AFBEE2100D2C231 /* FirstViewController.swift */,
 				384783872AFD9A1B00D2C231 /* LoginViewController.swift */,
 				3847838B2AFD9A9400D2C231 /* RegisterViewController.swift */,
+				3847839B2B0109A500D2C231 /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 				384783842AFD7C0600D2C231 /* Extensions.swift in Sources */,
 				384783752AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld in Sources */,
 				3847836B2AFBED9C00D2C231 /* AppDelegate.swift in Sources */,
+				3847839A2B01067D00D2C231 /* FileManagerHelper.swift in Sources */,
+				3847839C2B0109A500D2C231 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

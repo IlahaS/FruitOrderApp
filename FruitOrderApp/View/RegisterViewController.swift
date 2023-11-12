@@ -8,9 +8,9 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupView()
         registerView.delegate = self
+        setupView()
+
     }
     
     private func setupView(){
@@ -25,11 +25,9 @@ class RegisterViewController: UIViewController {
         ])
     }
 }
-
 extension RegisterViewController: RegisterViewDelegate {
-    
-    func registerViewDismiss() {
-        
-        dismiss(animated: true)
+    func registerButtonTapped() {
+        let loginViewController = LoginViewController()
+        navigationController?.pushViewController(loginViewController, animated: true)
     }
 }
