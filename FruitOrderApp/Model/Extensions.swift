@@ -26,6 +26,8 @@ extension UIImage {
     static var tomattoBack1: UIImage {UIImage(named: "tomattoBackground1")! }
     static var tomattoBack2: UIImage {UIImage(named: "tomattoBackground2")! }
     static var tomattoImage: UIImage {UIImage(named: "tomattoImage")! }
+    static var plus: UIImage {UIImage(named: "coolicon")! }
+    static var trash1: UIImage {UIImage(named: "trash")! }
 }
 
 extension UIColor {
@@ -50,4 +52,7 @@ extension UIColor {
     static var yellowColor: UIColor { UIColor(hexString: "F2C94C") }
     static var purpleColor: UIColor { UIColor(hexString: "9059A7") }
     static var grayColor: UIColor { UIColor(hexString: "4F4F4F") }
+    static var grayColor2: UIColor { UIColor(hexString: "E5E5E5") }
+    static var greenColor: UIColor { UIColor(hexString: "6FCF97") }
+    static var detailColor: UIColor { UIColor(hexString: "BDBDBD") }
 }

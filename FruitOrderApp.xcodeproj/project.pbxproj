@@ -22,6 +22,25 @@
 		384783982B0026DE00D2C231 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783972B0026DE00D2C231 /* DataManager.swift */; };
 		3847839A2B01067D00D2C231 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783992B01067D00D2C231 /* FileManagerHelper.swift */; };
 		3847839C2B0109A500D2C231 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847839B2B0109A500D2C231 /* HomeViewController.swift */; };
+		3847839E2B016A5300D2C231 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847839D2B016A5300D2C231 /* FruitCell.swift */; };
+		384783A02B016C3000D2C231 /* Fruit.json in Resources */ = {isa = PBXBuildFile; fileRef = 3847839F2B016C3000D2C231 /* Fruit.json */; };
+		384783A22B01705600D2C231 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783A12B01705600D2C231 /* JsonParser.swift */; };
+		384783A62B0517CE00D2C231 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783A52B0517CE00D2C231 /* ProfileViewController.swift */; };
+		384783A82B0518D000D2C231 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783A72B0518D000D2C231 /* BasketViewController.swift */; };
+		384783AA2B0519DD00D2C231 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783A92B0519DD00D2C231 /* TabViewController.swift */; };
+		384783AC2B051D2C00D2C231 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783AB2B051D2C00D2C231 /* HomeViewModel.swift */; };
+		384783AE2B06D90800D2C231 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783AD2B06D90800D2C231 /* CustomHeaderView.swift */; };
+		384783BB2B0962F100D2C231 /* SelectedFruit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783B92B0962F100D2C231 /* SelectedFruit+CoreDataClass.swift */; };
+		384783BC2B0962F100D2C231 /* SelectedFruit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783BA2B0962F100D2C231 /* SelectedFruit+CoreDataProperties.swift */; };
+		384783C02B0977F400D2C231 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783BF2B0977F400D2C231 /* CoreDataModel.swift */; };
+		384783C22B097FA300D2C231 /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783C12B097FA300D2C231 /* BasketCell.swift */; };
+		384783C42B0AB54700D2C231 /* PurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783C32B0AB54700D2C231 /* PurchaseController.swift */; };
+		384783C62B0AC72D00D2C231 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783C52B0AC72D00D2C231 /* ResultController.swift */; };
+		384783CA2B0B6B3F00D2C231 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783C92B0B6B3F00D2C231 /* ItemViewController.swift */; };
+		384783CC2B0B745C00D2C231 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384783CB2B0B745C00D2C231 /* ItemViewModel.swift */; };
+		38828D962B0D4971005EB276 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38828D952B0D4971005EB276 /* PurchaseView.swift */; };
+		38828D992B0D5CE5005EB276 /* Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 38828D982B0D5CE5005EB276 /* Animation.json */; };
+		38828D9C2B0D5E0B005EB276 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 38828D9B2B0D5E0B005EB276 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +59,24 @@
 		384783972B0026DE00D2C231 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		384783992B01067D00D2C231 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
 		3847839B2B0109A500D2C231 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3847839D2B016A5300D2C231 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+		3847839F2B016C3000D2C231 /* Fruit.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Fruit.json; sourceTree = "<group>"; };
+		384783A12B01705600D2C231 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		384783A52B0517CE00D2C231 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		384783A72B0518D000D2C231 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		384783A92B0519DD00D2C231 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		384783AB2B051D2C00D2C231 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		384783AD2B06D90800D2C231 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		384783B92B0962F100D2C231 /* SelectedFruit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedFruit+CoreDataClass.swift"; sourceTree = "<group>"; };
+		384783BA2B0962F100D2C231 /* SelectedFruit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedFruit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		384783BF2B0977F400D2C231 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		384783C12B097FA300D2C231 /* BasketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCell.swift; sourceTree = "<group>"; };
+		384783C32B0AB54700D2C231 /* PurchaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseController.swift; sourceTree = "<group>"; };
+		384783C52B0AC72D00D2C231 /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		384783C92B0B6B3F00D2C231 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		384783CB2B0B745C00D2C231 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		38828D952B0D4971005EB276 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
+		38828D982B0D5CE5005EB276 /* Animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Animation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +86,7 @@
 			files = (
 				384783942AFE7EFB00D2C231 /* SnapKit in Frameworks */,
 				384783962AFE7EFB00D2C231 /* SnapKit-Dynamic in Frameworks */,
+				38828D9C2B0D5E0B005EB276 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +119,10 @@
 				384783762AFBED9D00D2C231 /* Assets.xcassets */,
 				3847837B2AFBED9D00D2C231 /* Info.plist */,
 				384783732AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld */,
+				384783B92B0962F100D2C231 /* SelectedFruit+CoreDataClass.swift */,
+				384783BA2B0962F100D2C231 /* SelectedFruit+CoreDataProperties.swift */,
+				38828D982B0D5CE5005EB276 /* Animation.json */,
+				3847839F2B016C3000D2C231 /* Fruit.json */,
 			);
 			path = FruitOrderApp;
 			sourceTree = "<group>";
@@ -91,6 +133,8 @@
 				384783832AFD7C0600D2C231 /* Extensions.swift */,
 				384783972B0026DE00D2C231 /* DataManager.swift */,
 				384783992B01067D00D2C231 /* FileManagerHelper.swift */,
+				384783A12B01705600D2C231 /* JsonParser.swift */,
+				384783BF2B0977F400D2C231 /* CoreDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,9 +142,8 @@
 		384783902AFD9CC000D2C231 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				384783852AFD7FE500D2C231 /* FirstView.swift */,
-				384783892AFD9A8200D2C231 /* LoginView.swift */,
-				3847838D2AFD9AB400D2C231 /* RegisterView.swift */,
+				384783CB2B0B745C00D2C231 /* ItemViewModel.swift */,
+				384783AB2B051D2C00D2C231 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -108,12 +151,73 @@
 		384783912AFD9CD700D2C231 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				384783812AFBEE2100D2C231 /* FirstViewController.swift */,
-				384783872AFD9A1B00D2C231 /* LoginViewController.swift */,
-				3847838B2AFD9A9400D2C231 /* RegisterViewController.swift */,
-				3847839B2B0109A500D2C231 /* HomeViewController.swift */,
+				38828D902B0D4827005EB276 /* FirstScreen */,
+				38828D912B0D483E005EB276 /* LoginScreen */,
+				38828D922B0D4855005EB276 /* RegisterScreen */,
+				38828D932B0D4879005EB276 /* HomeScreen */,
+				38828D942B0D4891005EB276 /* BasketScreen */,
+				38828D972B0D4A53005EB276 /* PurchaseScreen */,
+				384783A92B0519DD00D2C231 /* TabViewController.swift */,
+				384783A52B0517CE00D2C231 /* ProfileViewController.swift */,
+				384783C92B0B6B3F00D2C231 /* ItemViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		38828D902B0D4827005EB276 /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				384783812AFBEE2100D2C231 /* FirstViewController.swift */,
+				384783852AFD7FE500D2C231 /* FirstView.swift */,
+			);
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		38828D912B0D483E005EB276 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				384783872AFD9A1B00D2C231 /* LoginViewController.swift */,
+				384783892AFD9A8200D2C231 /* LoginView.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		38828D922B0D4855005EB276 /* RegisterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3847838B2AFD9A9400D2C231 /* RegisterViewController.swift */,
+				3847838D2AFD9AB400D2C231 /* RegisterView.swift */,
+			);
+			path = RegisterScreen;
+			sourceTree = "<group>";
+		};
+		38828D932B0D4879005EB276 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3847839B2B0109A500D2C231 /* HomeViewController.swift */,
+				3847839D2B016A5300D2C231 /* FruitCell.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		38828D942B0D4891005EB276 /* BasketScreen */ = {
+			isa = PBXGroup;
+			children = (
+				384783A72B0518D000D2C231 /* BasketViewController.swift */,
+				384783C12B097FA300D2C231 /* BasketCell.swift */,
+				384783AD2B06D90800D2C231 /* CustomHeaderView.swift */,
+			);
+			path = BasketScreen;
+			sourceTree = "<group>";
+		};
+		38828D972B0D4A53005EB276 /* PurchaseScreen */ = {
+			isa = PBXGroup;
+			children = (
+				384783C32B0AB54700D2C231 /* PurchaseController.swift */,
+				38828D952B0D4971005EB276 /* PurchaseView.swift */,
+				384783C52B0AC72D00D2C231 /* ResultController.swift */,
+			);
+			path = PurchaseScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +239,7 @@
 			packageProductDependencies = (
 				384783932AFE7EFB00D2C231 /* SnapKit */,
 				384783952AFE7EFB00D2C231 /* SnapKit-Dynamic */,
+				38828D9B2B0D5E0B005EB276 /* Lottie */,
 			);
 			productName = FruitOrderApp;
 			productReference = 384783672AFBED9C00D2C231 /* FruitOrderApp.app */;
@@ -166,6 +271,7 @@
 			mainGroup = 3847835E2AFBED9C00D2C231;
 			packageReferences = (
 				384783922AFE7EFB00D2C231 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				38828D9A2B0D5E0B005EB276 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 384783682AFBED9C00D2C231 /* Products */;
 			projectDirPath = "";
@@ -181,6 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384783A02B016C3000D2C231 /* Fruit.json in Resources */,
+				38828D992B0D5CE5005EB276 /* Animation.json in Resources */,
 				384783772AFBED9D00D2C231 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,18 +300,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384783AC2B051D2C00D2C231 /* HomeViewModel.swift in Sources */,
 				3847838E2AFD9AB400D2C231 /* RegisterView.swift in Sources */,
+				384783A82B0518D000D2C231 /* BasketViewController.swift in Sources */,
+				384783CA2B0B6B3F00D2C231 /* ItemViewController.swift in Sources */,
 				384783882AFD9A1B00D2C231 /* LoginViewController.swift in Sources */,
+				384783CC2B0B745C00D2C231 /* ItemViewModel.swift in Sources */,
+				384783AE2B06D90800D2C231 /* CustomHeaderView.swift in Sources */,
+				38828D962B0D4971005EB276 /* PurchaseView.swift in Sources */,
+				3847839E2B016A5300D2C231 /* FruitCell.swift in Sources */,
 				3847838A2AFD9A8200D2C231 /* LoginView.swift in Sources */,
+				384783AA2B0519DD00D2C231 /* TabViewController.swift in Sources */,
 				384783822AFBEE2100D2C231 /* FirstViewController.swift in Sources */,
+				384783A62B0517CE00D2C231 /* ProfileViewController.swift in Sources */,
 				3847838C2AFD9A9400D2C231 /* RegisterViewController.swift in Sources */,
+				384783C42B0AB54700D2C231 /* PurchaseController.swift in Sources */,
+				384783C62B0AC72D00D2C231 /* ResultController.swift in Sources */,
 				384783982B0026DE00D2C231 /* DataManager.swift in Sources */,
+				384783C22B097FA300D2C231 /* BasketCell.swift in Sources */,
 				384783862AFD7FE500D2C231 /* FirstView.swift in Sources */,
 				384783842AFD7C0600D2C231 /* Extensions.swift in Sources */,
 				384783752AFBED9C00D2C231 /* FruitOrderApp.xcdatamodeld in Sources */,
 				3847836B2AFBED9C00D2C231 /* AppDelegate.swift in Sources */,
 				3847839A2B01067D00D2C231 /* FileManagerHelper.swift in Sources */,
+				384783A22B01705600D2C231 /* JsonParser.swift in Sources */,
+				384783BB2B0962F100D2C231 /* SelectedFruit+CoreDataClass.swift in Sources */,
 				3847839C2B0109A500D2C231 /* HomeViewController.swift in Sources */,
+				384783C02B0977F400D2C231 /* CoreDataModel.swift in Sources */,
+				384783BC2B0962F100D2C231 /* SelectedFruit+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +537,14 @@
 				minimumVersion = 5.6.0;
 			};
 		};
+		38828D9A2B0D5E0B005EB276 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -425,6 +557,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 384783922AFE7EFB00D2C231 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
+		};
+		38828D9B2B0D5E0B005EB276 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38828D9A2B0D5E0B005EB276 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 

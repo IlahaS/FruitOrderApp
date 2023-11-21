@@ -20,13 +20,24 @@ struct User: Codable{
     var email: String?
     var phone: Int?
     var password: String?
-    var fruits: [Fruit]
+    var basket: [Fruit]
 }
 
 struct Fruit: Codable{
     var name: String?
     var price: String?
     var about: String?
-    var star: Int?
+    var star: Double?
+    var image1: String?
+    var image2: String?
+    var image3: String?
+    var isSelected: Bool?
 }
+
+enum Titles: String {
+    case homeTitle = "Fruits & Vegetables"
+    case basketTitle = "Everything in your door step"
+    case profileTitle = "Your personal data: "
+}
+
 

@@ -5,22 +5,20 @@ import SnapKit
 
 
 protocol RegisterViewDelegate: AnyObject {
-    func registerButtonTapped()
+    func registerButtonTapped(email: String?, password: String?)
 }
 
 class RegisterView: UIView {
     
     weak var delegate: RegisterViewDelegate?
-    
     var onUserRegistered: ((User) -> Void)?
-    //var onLogin: ((String?, String?) -> Void)?
+    var onLogin: ((String?, String?) -> Void)?
     var users = [User]()
     let helper = FileManagerHelper()
     
     lazy var welcome: UILabel! = {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 70))
         label.textAlignment = .left
-        label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 3
@@ -35,8 +33,7 @@ class RegisterView: UIView {
     lazy var fullNameTextField: UITextField! = {
         let text1 = UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
         text1.placeholder = "Enter your fullName"
-        text1.textColor = .white
-        text1.isSecureTextEntry = true
+        text1.textColor = .black
         text1.translatesAutoresizingMaskIntoConstraints = false
         text1.backgroundColor = .white
         text1.font = UIFont.systemFont(ofSize: 15)
@@ -45,15 +42,13 @@ class RegisterView: UIView {
         text1.keyboardType = UIKeyboardType.default
         text1.returnKeyType = UIReturnKeyType.done
         text1.clearButtonMode = UITextField.ViewMode.whileEditing
-        
         return text1
     }()
     
     lazy var gmailTextField: UITextField! = {
         let text1 = UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
         text1.placeholder = "Enter your gmail"
-        text1.textColor = .white
-        text1.isSecureTextEntry = true
+        text1.textColor = .black
         text1.translatesAutoresizingMaskIntoConstraints = false
         text1.backgroundColor = .white
         text1.font = UIFont.systemFont(ofSize: 15)
@@ -62,15 +57,13 @@ class RegisterView: UIView {
         text1.keyboardType = UIKeyboardType.default
         text1.returnKeyType = UIReturnKeyType.done
         text1.clearButtonMode = UITextField.ViewMode.whileEditing
-        
         return text1
     }()
     
     lazy var phoneTextField: UITextField! = {
         let text1 = UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
         text1.placeholder = "Enter your phone"
-        text1.textColor = .white
-        text1.isSecureTextEntry = true
+        text1.textColor = .black
         text1.translatesAutoresizingMaskIntoConstraints = false
         text1.backgroundColor = .white
         text1.font = UIFont.systemFont(ofSize: 15)
@@ -79,14 +72,13 @@ class RegisterView: UIView {
         text1.keyboardType = UIKeyboardType.default
         text1.returnKeyType = UIReturnKeyType.done
         text1.clearButtonMode = UITextField.ViewMode.whileEditing
-        
         return text1
     }()
     
     lazy var passwordTextField: UITextField! = {
         let text1 = UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
         text1.placeholder = "Enter your password"
-        text1.textColor = .white
+        text1.textColor = .black
         text1.isSecureTextEntry = true
         text1.translatesAutoresizingMaskIntoConstraints = false
         text1.backgroundColor = .white
@@ -96,7 +88,6 @@ class RegisterView: UIView {
         text1.keyboardType = UIKeyboardType.default
         text1.returnKeyType = UIReturnKeyType.done
         text1.clearButtonMode = UITextField.ViewMode.whileEditing
-        
         return text1
     }()
     
@@ -110,20 +101,55 @@ class RegisterView: UIView {
         button.clipsToBounds = true
         button.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
         return button
-      }()
+    }()
+    
+    lazy var errorLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .red
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setupView()
         helper.readData { users in
             self.users = users
         }
+        setupErrorLabel()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-        
+    }
+    
+    private func showError(message: String) {
+        errorLabel.isHidden = false
+        errorLabel.text = message
+    }
+    
+    private func validateFields() -> Bool {
+        guard let fullName = fullNameTextField.text, !fullName.isEmpty,
+              let email = gmailTextField.text, !email.isEmpty,
+              let phoneText = phoneTextField.text, !phoneText.isEmpty,
+              let _ = Int(phoneText),
+              let password = passwordTextField.text, !password.isEmpty else {
+            showError(message: "All fields are mandatory")
+            return false
+        }
+        return true
+    }
+    
+    private func setupErrorLabel() {
+        addSubview(errorLabel)
+        errorLabel.snp.makeConstraints {
+            $0.top.equalTo(registerButton.snp.bottom).offset(8)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.bottom.lessThanOrEqualToSuperview().offset(-16)
+        }
+        errorLabel.isHidden = true
     }
     
     func setupView(){
@@ -135,6 +161,7 @@ class RegisterView: UIView {
         addSubview(phoneTextField)
         addSubview(passwordTextField)
         addSubview(registerButton)
+        addSubview(errorLabel)
         
         welcome.snp.makeConstraints {
             $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
@@ -173,8 +200,27 @@ class RegisterView: UIView {
         }
     }
     
-    
     @objc func goToLogin() {
-        delegate?.registerButtonTapped()
+        
+        if validateFields() {
+            
+            delegate?.registerButtonTapped(email: gmailTextField?.text, password: passwordTextField?.text)
+            
+            let user = User(fullname: fullNameTextField.text ?? "",
+                            email: gmailTextField.text ?? "",
+                            phone: Int(phoneTextField.text ?? "") ?? 0,
+                            password: passwordTextField.text ?? "", basket: [])
+            
+            onUserRegistered?(user)
+            UserManager.shared.currentUser = user
+            
+            users.append(user)
+            helper.writeData(users: self.users)
+            
+            let defaults = UserDefaults.standard
+            defaults.set(fullNameTextField.text, forKey: "fullName")
+            defaults.set(gmailTextField.text, forKey: "email")
+            defaults.set(phoneTextField.text, forKey: "phone")
+        }
     }
 }

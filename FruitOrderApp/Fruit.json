@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Banana",
+    "price": "1.32",
+    "about": "A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called plantains, distinguishing them from dessert bananas.",
+    "star": 4.3,
+    "image1": "bananaImage",
+    "image2": "bananaBack1",
+    "image3": "bananaBackground2"
+  },
+  {
+    "name": "Cabbage",
+    "price": "0.85",
+    "about": "Cabbage, comprising several cultivars of Brassica oleracea, is a leafy green, red, or white biennial plant grown as an annual vegetable crop for its dense-leaved heads. Cabbages are rich in vitamin C, fiber, and vitamin K. They may help with heart and digestive health.",
+    "star": 4.5,
+    "image1": "cabbageImage",
+    "image2": "cabbageBackground1",
+    "image3": "cabbageBackground2"
+  },
+  {
+    "name": "Tomatto",
+    "price": "1.1",
+    "about": "The tomato is the edible berry of the plant Solanum lycopersicum, commonly known as the tomato plant. The species originated in western South America, Mexico, and Central America. The Nahuatl word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived.",
+    "star": 4.9,
+    "image1": "tomattoImage",
+    "image2": "tomattoBackground1",
+    "image3": "tomattoBackground2"
+  },
+  {
+    "name": "EggPlant",
+    "price": "0.94",
+    "about": "Eggplant, aubergine, brinjal, or baigan is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit. Most commonly purple, the spongy, absorbent fruit is used in several cuisines. Typically used as a vegetable in cooking, it is a berry by botanical definition",
+    "star": 4.6,
+    "image1": "eggplantImage",
+    "image2": "eggplantBackground1",
+    "image3": "eggplantBackground2"
+  },
+  {
+    "name": "Lettuce",
+    "price": "0.28",
+    "about": "Lettuce is an annual plant of the family Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.",
+    "star": 3.9,
+    "image1": "lettuceImage",
+    "image2": "lettuceBackground1",
+    "image3": "lettuceBackground2"
+  },
+  {
+    "name": "Potato",
+    "price": "1.15",
+    "about": "The potato is a starchy food, a tuber of the plant Solanum tuberosum and is a root vegetable native to the Americas. The plant is a perennial in the nightshade family Solanaceae. Wild potato species can be found from the southern United States to southern Chile.",
+    "star": 4.1,
+    "image1": "pottatoImage",
+    "image2": "pottatoBackground1",
+    "image3": "pottatoBackground2"
+  }
+]

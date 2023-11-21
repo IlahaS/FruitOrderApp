@@ -10,32 +10,24 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
+               
         window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if UserDefaults.standard.bool(forKey: "loggedIn") {
+            let tabController = TabViewController()
+            window?.rootViewController = tabController
+        } else {
+            let firstController = FirstViewController()
+            let navigationController = UINavigationController(rootViewController: firstController)
+            window?.rootViewController = navigationController
+        }
         window?.makeKeyAndVisible()
-        //let loggedIn = UserDefaults.standard.bool(forKey: "loggedIn")
-
-//                if loggedIn {
-//                    let homeController = HomeViewController()
-//                    let navigationController = UINavigationController(rootViewController: homeController)
-//                    window?.rootViewController = navigationController
-                //} else {
-                    let firstController = FirstViewController()
-                    let navigationController = UINavigationController(rootViewController: firstController)
-                    window?.rootViewController = navigationController
-                //}
         
         return true
     }
-
-
-
 
     // MARK: - Core Data stack
 

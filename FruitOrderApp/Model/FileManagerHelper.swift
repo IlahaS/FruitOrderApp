@@ -1,9 +1,3 @@
-//
-//  FileManagerHelper.swift
-//  FruitOrderApp
-//
-//  Created by Ilahe Samedova on 12.11.23.
-//
 
 import Foundation
 
@@ -20,7 +14,6 @@ class FileManagerHelper{
         do{
             let data = try JSONEncoder().encode(users)
             try data.write(to: getFilePath())
-            
         }catch {
             print(error.localizedDescription)
         }
@@ -37,8 +30,7 @@ class FileManagerHelper{
         }
     }
     func saveData(users: [User], completion: @escaping (Bool) -> Void) {
-            writeData(users: users)
-            completion(true)
-        }
-    
+        writeData(users: users)
+        completion(true)
+    }
 }
