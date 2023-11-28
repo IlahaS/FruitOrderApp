@@ -1,6 +1,6 @@
 import UIKit
 import SnapKit
-import Lottie
+//import Lottie
 
 final class ProfileViewController: UIViewController {
     
@@ -39,8 +39,8 @@ final class ProfileViewController: UIViewController {
         return button
     }()
     
-//    private let animationView: AnimationView = {
-//            let animationView = AnimationView()
+//    private let animationView: LottieAnimationView = {
+//            let animationView = LottieAnimationView()
 //            animationView.contentMode = .scaleAspectFit
 //            animationView.loopMode = .loop 
 //            animationView.translatesAutoresizingMaskIntoConstraints = false
@@ -60,10 +60,11 @@ final class ProfileViewController: UIViewController {
             NSAttributedString.Key.foregroundColor: UIColor.black,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 28, weight: .bold)
         ]
-//        if let animation = Animation.named("Animation") {
-//                    animationView.animation = animation
-//                    animationView.play()
-//                }
+        
+//        if let animation = Lottie.Animation.named("Animation") {
+//            animationView.animation = animation
+//            animationView.play()
+//        }
     }
     
     private func setupLabels() {
